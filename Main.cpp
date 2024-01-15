@@ -16,7 +16,7 @@ int _stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 		MessageBoxA(NULL, "Error Reading passcode!", "Error", MB_OK | MB_ICONERROR);
 		exit(-1);
 	}
-	byte XResult = 0;	//密码异或值
+	byte XResult = 0;	//Password Encrypted
 	for (i = 0; i<len; i++){
 		XResult ^= keys[i];
 	}
