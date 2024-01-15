@@ -26,7 +26,7 @@ int _stdcall WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 		exit(-1);
 	}
 
-	if (mbr[cryptFlag] == 0x16){  //0x16  可以是任何数字
+	if (mbr[cryptFlag] == 0x16){  //0x16  (Any number supported)
 		MessageBoxA(NULL, "Initialization Complete.", "ERROR", MB_OK | MB_ICONERROR);
 		exit(-1);
 	}
